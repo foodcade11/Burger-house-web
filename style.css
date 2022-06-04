@@ -18,18 +18,20 @@
     --mainTransition: all 0.3s ease-in-out;
     --letterSpacing: 0.5rem;
 }
-body{
-    font-family: var(--robototext);
-
-}
 /* clear fix */
 
 .clearfix::before,
 .clearfix::after{
-    content: '';
+    content:"";
     clear: both;
+    display: table;
 }
 /* end clear fix */
+body{
+    font-family: var(--robototext);
+
+}
+
 .header{
     min-height: 100vh;
     background:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/main-bcg.jpg) center/cover no-repeat fixed;
@@ -237,8 +239,6 @@ body{
     margin: 1rem 0;
     max-width: 26rem;
 }
-/* end of about */
-
 /* media query */
 @media screen and (min-width:992px) {
     .about-img,.about-info {
@@ -249,3 +249,95 @@ body{
     
 }
 /* end of media query */
+/* end of about */
+
+
+
+ /* /* products  */
+.Products{
+    background: var(--mainDark);
+    
+
+}
+ .Products-info,
+ .Products-inventory{
+     padding: 2rem ;
+ }
+ .products-text{
+     /* color: var(--mainWhite);
+     max-width: 20rem;
+     margin: 1rem 0; */
+     color: var(--mainWhite);
+     max-width: 20rem;
+     margin: 1rem 0;
+
+
+ }
+.Product{
+     padding: 2rem 0;
+
+ }
+ .Product-img{
+     width: 100%;
+     display: block;
+     border-radius: 0.4rem;
+     margin-bottom: 2rem ;
+
+ }
+ .Product-title{
+     color: var(--mainWhite);
+     text-transform: uppercase;
+     letter-spacing: var(--letterSpacing);
+     margin-bottom: 1rem;
+
+    }
+    
+    .Product-price{
+        color: var(--secondaryColor);
+        text-transform: uppercase;
+        letter-spacing: var(--letterSpacing);
+        font-family: var(--macondoText);
+
+
+
+    }
+    /* media qureay */
+@media screen and (min-width:768px){
+    .Product{
+        float:left;
+        width: 50%;
+        padding: 2rem 1rem;
+        
+
+    }
+    
+}
+@media screen and (min-width:992px){
+    .Product{
+        width: 33.3%;
+    }
+}
+@media screen and (min-width:1200px){
+    .Products-inventory{
+        float: left;
+        width: 70%;
+    }
+    .Product{
+        padding: 1.5rem 1rem  0rem 1rem;
+    }
+    .products-info{
+        float: left;
+        width: 30%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+ /* end of products */
+   
