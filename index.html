@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Nav button -->
+<span class="nav-btn" id="nav-btn">
+    <i class="fas fa-bars"></i>
+</span>
+<!-- end of Nav button -->
+
+<!-- navbar -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+            <i class="fas fa-times"></i>
+        </span>
+    </div>
+    <ul class="nav-items">
+        <li><a href="#" class="nav-link">Home</a> </li>
+        <li><a href="#" class="nav-link">Specials</a> </li>
+        <li><a href="#" class="nav-link">About</a> </li>
+        <li><a href="#" class="nav-link">Product</a> </li>
+    </ul>
+</nav>
+<!-- end of  navbar -->
     <!--header stars -->
     
         <header class="header">
@@ -27,7 +48,7 @@
              <!-- single special -->
              <article class="special">
                  <span class="special-icon" >
-                     <i class="fa fa-home"></i>
+                    <i class="fa-solid fa-gamepad"></i>
                  </span>
                  <h3 class="special-title"> Different Games</h3>
                  <P class="special-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dicta.</P>
@@ -36,7 +57,8 @@
              <!-- single special -->
              <article class="special">
                  <span class="special-icon" >
-                     <i class="fa fa-home"></i>
+                    <i class="fa-solid fa-ranking-star"></i
+                        >
                  </span>
                  <h3 class="special-title"> Different Games</h3>
                  <P class="special-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dicta.</P>
@@ -45,7 +67,7 @@
              <!-- single special -->
              <article class="special">
                  <span class="special-icon" >
-                     <i class="fa fa-home"></i>
+                    <i class="fa-solid fa-couch"></i>
                  </span>
                  <h3 class="special-title"> Different Games</h3>
                  <P class="special-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dicta.</P>
@@ -54,7 +76,7 @@
              <!-- single special -->
              <article class="special">
                  <span class="special-icon" >
-                     <i class="fa fa-home"></i>
+                    <i class="fa-solid fa-tv"></i>
                  </span>
                  <h3 class="special-title"> Different Games</h3>
                  <P class="special-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dicta.</P>
@@ -104,7 +126,7 @@
                    <!-- section -->
                    <div>
                     <h3 class="section-subtitle"> Check Out</h3>
-                    <h2 class="section-title">Our Products</h2>
+                    <h2 class="section-title text-white">Our Products</h2>
 
                 </div>
                 <!-- end of section title -->
@@ -143,5 +165,85 @@
             </div>
         </section>
         <!-- end of products  -->
+
+         <!-- contact -->
+    <section class="contact">
+        <div class="section-center clearfix">
+          <!-- contact info -->
+          <article class="contact-info">
+            <!-- contact item -->
+            <div class="contact-item">
+              <h3 class="contact-title">
+                <span class="contact-icon"><i class="fas fa-location-arrow"></i></span>address
+              </h3>
+              <h3 class="contact-text">Makka Al Mukarama Road, Shaqaalaha</h3>
+            </div>
+            <!-- end of contact item -->
+  
+              <!-- contact item -->
+            <div class="contact-item">
+              <h3 class="contact-title">
+                <span class="contact-icon"><i class="fas fa-envelope"></i></span>Email
+              </h3>
+              <h3 class="contact-text">maancadde192@gmail.com</h3>
+            </div>
+            <!-- end of contact item -->
+  
+              <!-- contact item -->
+            <div class="contact-item">
+              <h3 class="contact-title">
+                <span class="contact-icon"><i class="fas fa-phone"></i></span>Phone
+              </h3>
+              <h3 class="contact-text">+252 613 936630</h3>
+            </div>
+            <!-- end of contact item -->
+  
+          </article>
+          <!-- end of contact info -->
+  
+          <!-- contact forms -->
+          <article class="contact-form">
+            
+          <form class="form-group"  action="https://formspree.io/f/xpzbedoy"
+          method="POST">
+            <input type="text" name="name" placeholder="name" class="form-control">
+            <input type="email" name="email" placeholder="email" class="form-control">
+            <textarea name="message" rows="5" class="form-control" placeholder="message"></textarea>
+            <button type="submit" class="main-btn">Send</button>
+          </form>
+          </article>
+          <!-- end of contact forms -->
+        </div>
+      </section>
+      <!-- end of contact -->
+  
+       <!-- footer -->
+      <footer class="footer">
+        <div class="section-center">
+          <div class="social-icons">
+  
+          <!-- social icons -->
+          <a href="https://www.facebook.com/wizz.bother" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icons -->
+          <a href="https://www.instagram.com/engfoodcade/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icons -->
+          <a href="https://twitter.com" target="_blank" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- end of social icon -->
+          </div>
+            <p class="footer-text">
+            &copy; <span class="text-secondary ">Burger House</span>. all rights reserved
+          </p>
+          </div>
+        </footer>
+
+        <script src="app.js"></script>
 </body>
 </html> 
