@@ -3,7 +3,7 @@
     const navclose = document.getElementById('nav-close');
 
     navBtn.addEventListener('click', function(){
-        navBar.classList.add('showNav ');
+        navBar.classList.add('showNav');
     })
 
     navclose.addEventListener('click', function(){
